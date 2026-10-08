@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b12">
+  <title>All-in-One Premium Calculator — Anindya Biswas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="page-shell">
+    <header class="topbar glass">
+      <a class="brand" href="../index.html"><span class="brand-mark">A</span><span>ANINDYA</span></a>
+      <div class="topbar-right"><span class="live-dot"></span><span>All‑in‑One Calculator</span><button id="themeToggle" class="icon-btn" aria-label="Toggle theme">☾</button></div>
+    </header>
+
+    <section class="hero">
+      <div><span class="eyebrow">PROJECT · 03</span><h1>All‑in‑One Calculator</h1><p>Premium glass calculator with standard, scientific, memory, history and keyboard controls — built with HTML, CSS and JavaScript.</p></div>
+      <a class="back-link" href="../index.html">← Back to portfolio</a>
+    </section>
+
+    <section class="app-grid">
+      <div class="calculator-wrap glass">
+        <div class="toolbar">
+          <div class="mode-switch"><button id="standardBtn" class="mode active">Standard</button><button id="scientificBtn" class="mode">Scientific</button></div>
+          <button id="clearHistory" class="tool-btn">Clear History</button>
+        </div>
+        <div class="display-area">
+          <div id="expression" class="expression" aria-live="polite">Ready</div>
+          <div id="display" class="display" aria-live="polite">0</div>
+        </div>
+
+        <div id="scientificPad" class="scientific-pad hidden">
+          <button data-fn="sin">sin</button><button data-fn="cos">cos</button><button data-fn="tan">tan</button><button data-fn="sqrt">√</button><button data-fn="square">x²</button><button data-fn="cube">x³</button>
+          <button data-fn="ln">ln</button><button data-fn="log">log</button><button data-fn="pi">π</button><button data-fn="e">e</button><button data-fn="inverse">1/x</button><button data-fn="factorial">x!</button>
+        </div>
+
+        <div class="memory-row">
+          <button data-action="memory-clear">MC</button><button data-action="memory-recall">MR</button><button data-action="memory-add">M+</button><button data-action="memory-subtract">M−</button><button data-action="backspace">⌫</button>
+        </div>
+        <div class="keypad" id="keypad">
+          <button class="key utility" data-action="clear">AC</button><button class="key utility" data-action="sign">±</button><button class="key utility" data-action="percent">%</button><button class="key operator" data-value="/">÷</button>
+          <button class="key" data-value="7">7</button><button class="key" data-value="8">8</button><button class="key" data-value="9">9</button><button class="key operator" data-value="*">×</button>
+          <button class="key" data-value="4">4</button><button class="key" data-value="5">5</button><button class="key" data-value="6">6</button><button class="key operator" data-value="-">−</button>
+          <button class="key" data-value="1">1</button><button class="key" data-value="2">2</button><button class="key" data-value="3">3</button><button class="key operator" data-value="+">+</button>
+          <button class="key zero" data-value="0">0</button><button class="key" data-value=".">.</button><button class="key equals" data-action="equals">=</button>
+        </div>
+        <div class="hint">Keyboard: 0–9 · + − × ÷ · Enter = calculate · Esc = clear · Backspace = delete</div>
+      </div>
+
+      <aside class="history-panel glass">
+        <div class="panel-head"><div><span class="eyebrow">SMART LOG</span><h2>Calculation History</h2></div><span id="historyCount" class="count">0</span></div>
+        <div id="historyList" class="history-list"><div class="empty-history">Your calculations will appear here.</div></div>
+      </aside>
+    </section>
+    <footer>Built by <strong>Anindya Biswas</strong> · HTML · CSS · JavaScript</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>RestoFlow — Restaurant Management System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><div class="brand-mark">R</div><div><b>RestoFlow</b><small>Restaurant OS</small></div></div>
+  <nav>
+    <button class="nav active" data-page="dashboard">⌂ <span>Dashboard</span></button>
+    <button class="nav" data-page="orders">▣ <span>Orders</span><em id="orderBadge">8</em></button>
+    <button class="nav" data-page="tables">▦ <span>Tables</span></button>
+    <button class="nav" data-page="menu">☷ <span>Menu</span></button>
+    <button class="nav" data-page="reservations">◷ <span>Reservations</span></button>
+    <button class="nav" data-page="customers">♙ <span>Customers</span></button>
+    <button class="nav" data-page="staff">♟ <span>Staff</span></button>
+    <button class="nav" data-page="inventory">▤ <span>Inventory</span></button>
+    <button class="nav" data-page="reports">◩ <span>Reports</span></button>
+    <button class="nav" data-page="settings">⚙ <span>Settings</span></button>
+  </nav>
+  <div class="side-foot"><div class="status-dot"></div><span>All systems operational</span></div>
+</aside>
+<main class="main">
+<header class="topbar"><button class="hamb" id="hamb">☰</button><div><p class="eyebrow">RESTAURANT CONTROL CENTER</p><h1 id="pageTitle">Good evening, Manager.</h1></div><div class="top-actions"><div class="clock" id="clock"></div><button class="icon-btn" id="theme">☾</button><button class="avatar">AB</button></div></header>
+<div class="content" id="content"></div>
+</main></div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="modal"><div class="modal"><button class="close" id="closeModal">×</button><div id="modalBody"></div></div></div>
+<script src="script.js"></script>
+</body></html>
